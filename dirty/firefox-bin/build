@@ -1,0 +1,5 @@
+#!/bin/sh -e
+
+DESTDIR="$1/opt/firefox-bin"
+
+find . -type f -exec install -Dm 755 "{}" "$DESTDIR/{}" \;
