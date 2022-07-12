@@ -1,0 +1,5 @@
+#!/bin/sh -e
+
+tar xvf - < dbus-1.14.0-r1.apk
+
+cp -r etc/ usr/ "$1/"

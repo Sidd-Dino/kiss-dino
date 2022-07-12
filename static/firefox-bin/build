@@ -1,0 +1,12 @@
+#!/bin/sh -e
+
+DESTDIR="$1"
+
+mkdir -p "$DESTDIR/usr/bin/" \
+	 "$DESTDIR/usr/share/application" \
+	 "$DESTDIR/usr/share/pixmap"
+
+find . -type f -exec install -D "{}" "$DESTDIR/opt/firefox-bin/{}" \;
+
+ln -s /opt/firefox-bin/firefox "$DESTDIR/usr/bin/firefox"
+

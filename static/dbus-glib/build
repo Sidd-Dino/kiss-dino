@@ -1,0 +1,5 @@
+#!/bin/sh -e
+
+tar xvf - < dbus-glib-0.112-r0.apk
+
+cp -r usr/ "$1/"

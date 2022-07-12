@@ -1,0 +1,10 @@
+alsa-lib
+alsa-utils
+dbus-glib
+ffmpeg
+gtk+3
+libXfixes
+libXrender
+libXtst
+libXt
+nss
