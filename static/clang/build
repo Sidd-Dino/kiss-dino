@@ -2,5 +2,6 @@
 
 tar xvf - < clang-14.0.6-r0.apk
 tar xvf - < clang-libs-14.0.6-r0.apk
+tar xvf - < clang-dev-14.0.6-r0.apk
 
 cp -r usr/ "$1/

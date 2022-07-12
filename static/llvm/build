@@ -2,5 +2,6 @@
 
 tar xvf - < llvm14-14.0.6-r0.apk
 tar xvf - < llvm14-libs-14.0.6-r0.apk
+tar xvf - < llvm14-dev-14.0.6-r0.apk
 
 cp -r usr/ "$1/"

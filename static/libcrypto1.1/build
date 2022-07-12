@@ -1,5 +1,5 @@
 #!/bin/sh -e
 
-tar xvf - < libssl1.1-1.1.1q-r0.apk
+tar xvf - < libcrypto1.1-1.1.1q-r0.apk
 
 cp -r usr/ etc/ "$1/"

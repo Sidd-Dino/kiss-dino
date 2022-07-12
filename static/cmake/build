@@ -1,5 +1,5 @@
 #!/bin/sh -e
 
-tar xvf - < dbus-libs-1.14.0-r1.apk
+tar xvf - < cmake-3.23.1-r0.apk
 
 cp -r usr/ "$1/"
