@@ -1,0 +1,5 @@
+#!/bin/sh -e
+
+tar xvf - < libuv-1.44.1-r0.apk
+
+cp -r usr/ "$1/"
