@@ -1,0 +1,11 @@
+#!/bin/sh -e
+
+DESTDIR="$1"
+
+mkdir -p "$DESTDIR/usr/bin/" \
+	 "$DESTDIR/opt/"
+
+cp -r ../firefox-esr-bin/ "$DESTDIR/opt/"
+
+ln -s /opt/firefox-esr-bin/firefox "$DESTDIR/usr/bin/firefox-esr"
+

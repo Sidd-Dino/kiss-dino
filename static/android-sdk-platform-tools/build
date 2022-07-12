@@ -1,0 +1,12 @@
+#!/bin/sh -e
+
+install -d "$1/opt/android-sdk"
+unzip platform-tools_r33.0.2-linux.zip -d "$1/opt/android-sdk/"
+
+install -d "$1/etc/profile.d"
+printf 'export PATH=$PATH:/opt/android-sdk/platform-tools' \
+	 > "$1/etc/profile.d/android-sdk-platform-tools.sh"
+chmod 755 "$1/etc/profile.d/android-sdk-platform-tools.sh"
+
+install -Dm 644 "$1/license.html" \ 
+	"$1/usr/share/licenses/android-sdk-platform-tools/license.html"
