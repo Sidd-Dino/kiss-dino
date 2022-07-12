@@ -1,0 +1,14 @@
+#!/bin/sh -e
+
+patch -p1 -i byteorder.patch
+
+./configure \
+	--prefix=/usr \
+	--sysconfdir=/etc \
+	--enable-openssl \
+	--disable-openssl-runtime
+make
+
+make -j1 DESTDIR="$1" install
+make DESTDIR="$1" \
+	install-lib-headers install-lib-shared install-lib-so-link

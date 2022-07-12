@@ -1,0 +1,5 @@
+gcc
+libffi
+libstdc++
+libxml2
+zlib

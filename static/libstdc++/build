@@ -1,0 +1,5 @@
+#!/bin/sh -e
+
+tar xvf - < libstdc++-11.2.1_git20220219-r2.apk
+
+cp -r usr/ "$1/"
