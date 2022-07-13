@@ -1,5 +1,5 @@
 #!/bin/sh -e
 
-tar xvf - < libstdc++-11.2.1_git20220219-r2.apk
+tar xvf - < libstdc++-11.2.1_git20220219-r3.apk
 
 cp -r usr/ "$1/"
