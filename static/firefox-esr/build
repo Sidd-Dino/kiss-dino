@@ -1,5 +1,0 @@
-#!/bin/sh -e
-
-tar xvf - < firefox-esr-102.0-r0.apk
-
-cp -r usr/ "$1/"
