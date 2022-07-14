@@ -1,5 +1,11 @@
 #!/bin/sh -e
 
-tar xvf - < dbus-static-1.14.0-r1.apk
+DESTDIR="$1"
 
-cp -r usr/ "$1/"
+set -- *.apk
+
+for i; do
+    tar xvf - < "$i"
+done
+
+cp -r usr/ "$DESTDIR/"
