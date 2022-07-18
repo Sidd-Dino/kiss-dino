@@ -3,10 +3,9 @@
 export CFLAGS="$CFLAGS -D_GNU_SOURCE -DNO_GETCONTEXT -DUSE_MMAP -DHAVE_DL_ITERATE_PHDR"
 
 ./configure \
-		--prefix=/usr \
-		--datadir=/usr/share/doc/gc \
-		--enable-static \
-		--enable-cplusplus
+    --prefix=/usr \
+    --enable-static \
+    --enable-cplusplus
 
 make
 make DESTDIR=$1 install
