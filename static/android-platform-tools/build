@@ -1,0 +1,10 @@
+#!/bin/sh
+
+export DESTDIR=$1
+
+
+install -d "$DESTDIR/opt/android-sdk/"
+unzip platform-tools_r*-linux.zip -d "$DESTDIR/opt/android-sdk/"
+
+install -Dm755 "android-platform-tools.sh" > \
+               "$DESTDIR/etc/profile.d/android-platform-tools.sh"
